@@ -1,4 +1,5 @@
 #Plot 4
+png(filename = "plot4.png", width = 480, height = 480, units = "px") 
 par(mfrow = c(2,2), mar = c(4, 4, 2, 1))
 plot(Data1$Time, Data1$Global_active_power, type = "n", xlab="", ylab="Global Active Power" )
 lines(Data1$Time, Data1$Global_active_power, type = "l")
@@ -11,5 +12,4 @@ lines(Data1$Time, Data1$Sub_metering_3, col="blue", type = "l")
 legend("topright", pch = "___", bty = "n", col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 plot(Data1$Time, Data1$Global_reactive_power, type = "n", xlab="datetime", ylab="Global_reactive_power" )
 lines(Data1$Time, Data1$Global_reactive_power, type = "l")
-dev.copy(png, file = "plot4.png")
 dev.off()
