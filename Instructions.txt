@@ -1,0 +1,10 @@
+Five R programs were creted as part of these assignments:
+1. eda_assignment1_reading.R: This program downloads the zip file with the source data from the URL https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip. Also, this program prepares the data for the reporting executing the following steps:
+   1.a. Keep only the data corresponding to the dates 02/01/2007 and 02/02/2007.
+   1.b. Convert the Date field to a date field using the as.Date() function.
+   1.c. Convert the Time field to a time field using the strptime() function.
+2. plot1.R: This program generates the plot1.png
+3. plot2.R: This program generates the plot2.png
+4. plot3.R: This program generates the plot3.png
+5. plot4.R: This program generates the plot4.png
+

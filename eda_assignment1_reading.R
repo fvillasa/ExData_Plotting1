@@ -1,7 +1,3 @@
-currwd <- getwd()
-setwd("C:/fvillasa/Certification/Coursera/Data Science Specialization/Exploratory Data Analysis (EDA)/Program Assignments/Program Assignment 1")
-
-
 # When loading the dataset into R, please consider the following:
 # 1) The dataset has 2,075,259 rows and 9 columns. First calculate a rough estimate of how much memory the dataset will require in memory before reading into R. Make sure your computer has enough memory (most modern computers should be fine).
 # 2) We will only be using data from the dates 2007-02-01 and 2007-02-02. One alternative is to read the data from just those dates rather than reading in the entire dataset and subsetting to those dates.
@@ -34,5 +30,3 @@ unlink(temp)
 Data1 <- Data[which(Data$Date == "1/2/2007" | Data$Date == "2/2/2007"),]
 Data1$Time <- strptime(paste(Data1$Date, Data1$Time, sep = " "), format= "%d/%m/%Y %H:%M:%S")
 Data1$Date <- as.Date(Data1$Date, format= "%d/%m/%Y")
-
-setwd(currwd)
